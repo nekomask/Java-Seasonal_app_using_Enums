@@ -47,7 +47,8 @@ public class Main {
                 System.out.println("December falls in the Winter season");
                 break;
             default:
-                System.out.println("%d is in invalid month");
+                System.out.printf("%d is in invalid month", month);
+                break;
         }
 
 

@@ -2,55 +2,37 @@ public class Main {
 
 
     public static void main(String[] args) {
-
-
-        whichSeason(-6);
+        whichSeason(Month.JANUARY);
+        whichSeason(Month.MAY);
+        whichSeason(Month.OCTOBER);
+        whichSeason(Month.DECEMBER);
+        whichSeason(Month.APRIL);
+        whichSeason(Month.JULY);
 
     }
 
-    public static void whichSeason(int month) {
-        switch (month) {
-            case 1:
-                System.out.println("January falls in the Winter season");
+    public static void whichSeason(Month month){
+        switch (month){
+            case DECEMBER:
+            case JANUARY:
+            case FEBRUARY:
+                System.out.printf("%s is in the Winter season. \n", month );
                 break;
-            case 2:
-                System.out.println("February falls in the Winter season");
+            case MARCH:
+            case APRIL:
+            case MAY:
+                System.out.printf("%s is in the Spring season. \n", month );
                 break;
-            case 3:
-                System.out.println("March falls in the Spring season");
+            case JUNE:
+            case JULY:
+            case AUGUST:
+                System.out.printf("%s is in the Summer season. \n", month );
                 break;
-            case 4:
-                System.out.println("April falls in the Spring season");
-                break;
-            case 5:
-                System.out.println("May falls in the Spring season");
-                break;
-            case 6:
-                System.out.println("June falls in the Summer season");
-                break;
-            case 7:
-                System.out.println("July falls in the Summer season");
-                break;
-            case 8:
-                System.out.println("August falls in the Summer season");
-                break;
-            case 9:
-                System.out.println("September falls in the Autumn season");
-                break;
-            case 10:
-                System.out.println("October falls in the Autumn season");
-                break;
-            case 11:
-                System.out.println("November falls in the Autumn season");
-                break;
-            case 12:
-                System.out.println("December falls in the Winter season");
-                break;
-            default:
-                System.out.printf("%d is in invalid month", month);
+            case SEPTEMBER:
+            case OCTOBER:
+            case NOVEMBER:
+                System.out.printf("%s is in the Autumn season. \n", month );
                 break;
         }
-
-
     }
-}
+    }

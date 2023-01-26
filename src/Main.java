@@ -1,6 +1,10 @@
 public class Main {
+
+
     public static void main(String[] args) {
-        whichSeason(6);
+
+
+        whichSeason(-6);
 
     }
 
@@ -42,6 +46,8 @@ public class Main {
             case 12:
                 System.out.println("December falls in the Winter season");
                 break;
+            default:
+                System.out.println("%d is in invalid month");
         }
 
 
